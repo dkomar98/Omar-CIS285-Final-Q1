@@ -13,10 +13,10 @@ public class testSelectionSort {
 		testMixed();
 	}
 
-	
+
 			@Test
 		   public void testPositive(){
-			 
+
 		       int[] arr = new int[5];
 		       arr[0] = 8;
 		       arr[1] = 9;
@@ -34,12 +34,12 @@ public class testSelectionSort {
 		       SelectionSort.sort(arr);
 		       assertArrayEquals(arr, Sortedarr);
 
-		       
+
 		   }
 
 		   @Test
 		   public void testNegative(){
-			   
+
 		       int[] arr = new int[5];
 		       arr[0] = -8;
 		       arr[1] = -9;
@@ -54,16 +54,16 @@ public class testSelectionSort {
 		       Sortedarr[3] = -7;
 		       Sortedarr[4] = -2;
 
-		       
+
 		       SelectionSort.sort(arr);
 		       assertArrayEquals(arr, Sortedarr);
 
-		       
+
 		   }
 
 		   @Test
 		   public void testMixed(){
-			   
+
 		       int[] arr = new int[5];
 		       arr[0] = 0;
 		       arr[1] = 9;
@@ -79,8 +79,8 @@ public class testSelectionSort {
 		       Sortedarr[4] = 10;
 
 		       SelectionSort.sort(arr);
-		       
+
 		       assertArrayEquals(arr, Sortedarr);
-		       
+
 		   }
 }
