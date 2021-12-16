@@ -4,39 +4,38 @@ public class SelectionSort {
 
     /* Selection Sort function */
 
-	 public static void sort( int arr[] ){
+			        int n = arr.length;
 
-		 int N = arr.length;
+			        int i, j, pos, temp;
 
-	int i, j, pos, temp;
+			        for (i = 0; i < n-1; i++)
 
-	for (i = 0; i < N; i++)
+			        {
 
-	{
+			            pos = i;
 
-			pos = j;
+			            for (j = i+1; j < n; j++)
 
-			for (j = i+1; j < N-1; j++)
+			            {
 
-			{
+			                if (arr[j] < arr[pos])
 
-					if (arr[j] < arr[pos])
+			                {
 
-					{
+			                    pos = j;
 
-							pos = i;
+			                }
 
-					}
+			            }
 
-			}
 
-			/* Swap arr[i] and arr[pos] */
 
-			temp = arr[I];
+			            temp = arr[pos];
 
-			arr[i] = arr[pos];
+			            arr[pos] = arr[i];
 
-			arr[pos]= temp;      
+			            arr[i] = temp;
+			                
 
 	        }
 
